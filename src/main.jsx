@@ -1,10 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import HomePage from './pages/home/home.page';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = document.getElementById("root")
+const rootElem = ReactDOM.createRoot(root)
+
+rootElem.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <HomePage></HomePage>
+  </React.StrictMode>
 )
